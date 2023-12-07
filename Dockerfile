@@ -48,6 +48,7 @@ RUN pip3 install -U pip && \
 
 # mecab-ipadic-NEologd configuration
 WORKDIR /root
-RUN git clone https://github.com/neologd/mecab-ipadic-neologd.git
+# RUN git clone https://github.com/neologd/mecab-ipadic-neologd.git
+RUN git clone https://github.com/shugyosha89/mecab-ipadic-neologd.git
 RUN cd mecab-ipadic-neologd && bin/install-mecab-ipadic-neologd -n -y
 RUN echo "dicdir=/usr/lib/x86_64-linux-gnu/mecab/dic/mecab-ipadic-neologd">/etc/mecabrc
