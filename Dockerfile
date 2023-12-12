@@ -30,7 +30,8 @@ RUN apt-get update -q  && \
         python3-pip \
         mecab \
         libmecab-dev \
-        mecab-ipadic-utf8
+        mecab-ipadic-utf8 \
+        nvidia-container-runtime
 
 # Python packages
 RUN pip3 install -U pip && \
